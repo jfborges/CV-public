@@ -1,0 +1,232 @@
+\documentclass{article}
+
+% usepackages area :
+% titlesec : formats titles , sections etc ...
+% titling for the title and geometry to define the margins 
+
+\usepackage{titlesec}
+\usepackage{titling}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{adjustbox}
+% formating area . titleformat takes 4 arguments surrounded by the expected {}. 
+% The first one refers to atributts such as bold.
+% the second one refers to what cames before the section/title.
+% the third refers to spacing.
+% the fourth refers to what apperas after.
+
+\titleformat{\section}
+{\huge\bfseries}
+{}
+{0em}
+{}[\titlerule]
+
+\titleformat{\subsection}
+{\bfseries\large}
+{}
+{0em}
+{}
+
+% runin atribute surrounded by [] to make subsubsections appear inline after subsections
+
+\titleformat{\subsubsection}[runin]
+{\bfseries}
+{}
+{0em}
+{}
+
+\titlespacing{\subsubsection}
+{0em}
+{0em}
+{1em} % space between subsections and subsubsections
+
+% Format the title of the document with the \renewcommand. In this case is centered, bold and size is huge. 
+% we can add more information below it with the space between defined by the \vspace option.
+
+\renewcommand{\maketitle}{
+\begin{minipage}[t]{0.21\textwidth}
+\vspace{0pt} % Trick for alignment
+\includegraphics[scale=.1]{photo.png}
+\end{minipage}
+\begin{center}
+{\huge\bfseries
+\begin{center}
+\theauthor}
+\vspace{.25em}
+\end{center}
+\end{center}
+
+\begin{center}
+{\bfseries
+\thetitle}
+\begin{center}
+\vspace{.25em}
+%jorge.fborges@outlook.com
+\end{center}
+\end{center}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% This is where the actual document starts                                                                         %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\title{Curriculum vitae}
+\author{Jorge F. Borges}
+
+\maketitle
+
+\section{Personal details}
+
+\subsubsection{Email:} 
+<redacted>
+
+\subsubsection{phone:}
+<redacted>
+
+\subsubsection{LinkedIn profile:} 
+www.linkedin.com/in/jorgefborges
+
+\subsubsection{Sex:}
+Male 
+
+\subsubsection{Nationality:}
+Portuguese 
+
+\subsubsection{Birth date:} 
+27/08/1985
+
+\section{Education}
+
+\subsection{Escola Secundária Mirandela:}
+
+High school degree in the Electrotechnical field with final score of 13.
+
+\subsection{Instituto Superior de Engenharia de Lisboa [2004-2010]:}
+
+Attended Electrotechnical Engineering course with old bachelor scheme until it was replaced with Bologna bachelor scheme. Paused the studies after to start working having about 40 percent of the course to complete.
+
+\section{Experience}
+
+\subsection{Technical Support Agent [June 2008, January 2011] EGOR:}
+
+Provided technical support to iPhone clients when Optimus released the device on Portugal. After the line was discontinued due to low calls volume I integrated the general technical line supporting not only every mobile phone but also Kanguru mobile broadband devices to Enterprise clients. Also assisted Enterprise/Corporate clients configure Blackberry Solutions such as BIS (towards enterprise clients , pop3 or IMAP setup) and BES (towards Corporate clients, Microsoft Exchange Setup).
+
+\subsection{Technical Support Agent [January 2011, April 2014] Randstad Technologies:}
+
+Maintained the same responsibility for the same client (Optimus) and started providing technical support to Residential and Business ADSL/Fiber/Cable TV, phone and Internet services and respective equipment troubleshooting and configuration.
+
+\subsection{Technical Support Agent [May 2014, June 2014] ADECCO:}
+
+Maintained the same responsibility for the same client after it merged with ZON and formed the NOS brand.
+
+\subsection{Service Desk Representative [July 2014, July 2017] XEROX:}
+
+Provided technical support to European Enterprise clients subscribed to Xerox XPPS managed print services. The role involved troubleshooting, configuration and maintenance of printers at clients sites and dispatching engineers for complex situations not solvable in line. Support was provided in English through phone, email and Xerox ticketing solution channels. After 1 year I integrated the Corporate EPS managed print services team providing technical support to large European Corporations through phone, email, and dedicated client solutions as Zendesk and ServiceNow.
+
+\subsection{IT Consultant [January 2020, February 2020] REDIT:}
+
+Short term project where I was part of a team responsible for verifying and migrating content from one platform to another at EDP.
+
+\subsection{IT Consultant [March 2021, September 2021] Rumos Serviços S.A.:}
+
+Remote position in a team responsible for the integration and training of current CTT commercial customers subscribing to the CTT Expresso shipping service for a new online platform. This function consisted of remotely accessing the end user's computer through TeamViewer and AnyDesk remote software and completing the initial configuration of the said platform and devices (computer and printers), demonstrating to the customer the main options and configurations available and customizing the platform to their specific requirements.
+
+\section{Personal Skills}
+
+\subsection{Languages}
+
+Portuguese (native), English and Spanish.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Table where we define the columns separated by | and alignment with l, c or right option. All surrounded by {} %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{table}[h!]
+\begin{center}
+\caption{}
+\label{}
+\begin{tabular}{c|c|c|c|c|c}
+\textbf{} & \textbf{Listening} & \textbf{Reading} & \textbf{Spoken interaction} & \textbf{Spoken production} & \textbf{Writing} \\
+\hline
+English & C2 & C2 & C2 & C2 & C2\\
+Spanish & C1 & C1 & B1 & B1 & B1\\
+\end{tabular}
+\end{center}
+\end{table}
+Levels: A1 and A2: Basic user - B1 and B2: Independent user - C1 and C2: Proficient user
+
+\textbf{Common European Framework of Reference for Languages}
+
+\subsection{Organizational / managerial skills}
+
+% List , can be enumerate if we want it to be numbers or itemize if we want it with dots.
+% \setlenght\itemsep to define separation between items 
+
+\begin{itemize}
+\setlength\itemsep{0em}
+
+\item I am a practitioner of the GTD methodology (getting things done) and knowledgeable in other diverse time / project management methodologies, such as Kanban, Scrum, Agile, Kaizen, Lean and Six Sigma.
+
+\item During my professional career and due to its nature I developed stress resilience, shown punctuality and reliability as well as demonstrated professionalism and a proactive approach to problem-solving where no job is too big or small. I'm a highly detail-oriented and organized person.
+\end{itemize}
+
+\subsection{Job-related skills}
+
+\begin{itemize}
+\setlength\itemsep{0em}
+
+\item Over 10 years of business-oriented customer service experience (may have a client or agency perspective).
+
+\item Proven ability to handle confidential information with discretion.
+
+\item Strong writing skills (technical / creative).
+
+\item Comfortable in conceiving ideas and innovative thinking as well.
+
+\end{itemize}
+
+\subsection{Digital Skills}
+
+\begin{itemize}
+\setlength\itemsep{0em}
+
+\item Proficient user of Desktop and Mobile operating systems as Microsoft Windows, Apple's macOS, Linux (from Ubuntu to Arch Linux), iOS, android and Blackberry OS with respective configurations and backups using the OS solutions or terminal based ones such as rsync.
+
+\item Knowledge on configuring and maintaining WAN and WLAN setups and respective equipments such as routers and switches.
+
+\item Basic shell scripting on bash (setting up computers using scripts to install applications and modify settings on the system)
+
+\item Advanced user of Productivity Suites such as Microsoft Office and Apple's productivity suite (i.e.: Outlook, Word, Excel, PowerPoint, Pages, Numbers, Keynote, etc.) and Open Source solutions as LibreOffice.
+
+\item Knowledge writing in Markdown language with Vim and compiling/converting with Pandoc. Basic understanding of latex.
+
+\item Setting up virtual machines using popular tools such as VirtualBox, VMWare and Parallels.
+
+\item Digital Security and Privacy advocate. For my personal communications I use Signal and ProtonMail.
+
+\end{itemize}
+
+\section{Driver license}
+
+<redacted>
+
+\section{Contacting me}
+
+I can be contacted by either phone or email. For sensitive communications feel free to ask for additional details.
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
